@@ -6,6 +6,7 @@ const musicToggle = document.getElementById('musicToggle');
 const musicText = document.querySelector('.music-text');
 const vinyl = document.querySelector('.vinyl');
 
+
 function toggleMusic() {
     if (bgMusic.paused) {
         bgMusic.play();
@@ -61,8 +62,8 @@ function autoScroll(timestamp) {
 
 if (scrollGallery) {
     requestAnimationFrame(autoScroll); 
-
     
+
     scrollGallery.addEventListener('mousedown', (e) => {
         isDown = true;
         hasDragged = false; 
@@ -87,7 +88,7 @@ if (scrollGallery) {
         scrollGallery.scrollLeft = scrollLeft - walk;
     });
 
-   
+    
     scrollGallery.addEventListener('touchstart', (e) => {
         isDown = true;
         hasDragged = false;
