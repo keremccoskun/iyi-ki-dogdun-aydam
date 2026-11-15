@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ================== UÇUŞAN SÜSLER ================== */
+
 .floating-decorations {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100vh;
@@ -35,7 +35,7 @@ body {
     100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
 }
 
-/* ================== AÇILIŞ EKRANI ================== */
+
 .opening-screen {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100vh;
@@ -94,7 +94,7 @@ body {
 .open-btn:hover { transform: scale(1.1); }
 .fade-out { opacity: 0; visibility: hidden; }
 
-/* ================== MÜZİK ÇALAR YENİ YERİ ================== */
+
 .music-player-wrapper {
     display: flex;
     justify-content: center;
@@ -140,7 +140,7 @@ body {
     text-transform: uppercase;
 }
 
-/* ================== ANA İÇERİK VE YAN YANA KAYAN GALERİ ================== */
+
 .main-content {
     display: none; opacity: 0;
     padding: 60px 0; 
@@ -220,7 +220,7 @@ img.memory-media { cursor: pointer; }
 
 .memory-note { font-size: 1.15rem; line-height: 1.6; color: #6a5e5e; }
 
-/* ================== MEKTUP GÖRÜNÜMLÜ MESAJ ================== */
+
 .birthday-section {
     max-width: 800px;
     margin: 40px auto 60px auto;
@@ -253,7 +253,7 @@ img.memory-media { cursor: pointer; }
 .birthday-text { font-size: 1.35rem; line-height: 2.3; color: #6a5e5e; margin-bottom: 40px; }
 .birthday-signature { font-family: 'Great Vibes', cursive; font-size: 3rem; color: #d14d69; }
 
-/* ================== LIGHTBOX ================== */
+
 .lightbox {
     display: none; position: fixed; z-index: 999;
     left: 0; top: 0; width: 100%; height: 100%;
@@ -265,7 +265,7 @@ img.memory-media { cursor: pointer; }
 .lightbox-content { max-width: 90%; max-height: 90%; border-radius: 16px; box-shadow: 0 20px 60px rgba(209, 77, 105, 0.3); }
 .close-lightbox { position: absolute; top: 20px; right: 30px; color: #ff758c; font-size: 55px; cursor: pointer; }
 
-/* ================== MOBİL UYUM ================== */
+
 @media (max-width: 768px) {
     .title { font-size: 4rem; }
     .subtitle { font-size: 2.2rem; }
@@ -276,7 +276,7 @@ img.memory-media { cursor: pointer; }
     .birthday-card-inner { padding: 50px 20px 30px 20px; }
     .birthday-text { font-size: 1.15rem; }
 
-    /* Müzik çaları mobilde mektubun altına hizaladık */
+    
     .music-player-wrapper {
         margin-top: 20px;
         padding-left: 5px;
