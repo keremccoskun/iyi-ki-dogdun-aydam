@@ -6,7 +6,6 @@ const musicToggle = document.getElementById('musicToggle');
 const musicText = document.querySelector('.music-text');
 const vinyl = document.querySelector('.vinyl');
 
-// Müzik Çalar
 function toggleMusic() {
     if (bgMusic.paused) {
         bgMusic.play();
@@ -35,7 +34,7 @@ openBtn.addEventListener('click', function() {
     }, 500);
 });
 
-// YENİ VE KESİN ÇÖZÜM: ZAMAN AYARLI OTOMATİK KAYMA VE TUT-ÇEK
+
 const scrollGallery = document.getElementById('scrollGallery');
 
 let isDown = false;
@@ -44,14 +43,14 @@ let scrollLeft;
 let hasDragged = false; 
 
 let lastScrollTime = 0;
-// HIZ AYARI BURADA: Sayı BÜYÜDÜKÇE kayma hızı YAVAŞLAR (25 çok tatlı bir hızdır)
+
 const scrollDelay = 25; 
 
 function autoScroll(timestamp) {
     if (!lastScrollTime) lastScrollTime = timestamp;
     
     if (scrollGallery && !isDown) {
-        // Sadece belirlenen milisaniye geçtiğinde tam 1 piksel kaydır
+        
         if (timestamp - lastScrollTime >= scrollDelay) {
             scrollGallery.scrollLeft += 1;
             lastScrollTime = timestamp;
@@ -61,9 +60,9 @@ function autoScroll(timestamp) {
 }
 
 if (scrollGallery) {
-    requestAnimationFrame(autoScroll); // Döngüyü başlat
+    requestAnimationFrame(autoScroll); 
 
-    // PC (Mouse) İçin Tut-Çek Kontrolleri
+    
     scrollGallery.addEventListener('mousedown', (e) => {
         isDown = true;
         hasDragged = false; 
@@ -88,7 +87,7 @@ if (scrollGallery) {
         scrollGallery.scrollLeft = scrollLeft - walk;
     });
 
-    // Mobil (Touch) İçin Tut-Çek Kontrolleri
+   
     scrollGallery.addEventListener('touchstart', (e) => {
         isDown = true;
         hasDragged = false;
@@ -109,7 +108,7 @@ if (scrollGallery) {
     });
 }
 
-// Fotoğraf Kaydırma (Slider) Okları
+
 const memoryCards = document.querySelectorAll('.memory-card');
 memoryCards.forEach(function(card) {
     const medias = card.querySelectorAll('.memory-media'); 
@@ -134,7 +133,7 @@ memoryCards.forEach(function(card) {
     }
 });
 
-// Büyütme (Lightbox)
+
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
 const closeLightbox = document.getElementById('closeLightbox');
